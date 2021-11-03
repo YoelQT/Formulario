@@ -1,0 +1,84 @@
+#titulo{
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  resize: vertical;
+}
+
+input[type=radio] {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+label{
+  padding: 12px 12px 12px 12px;
+  display: inline-block;
+}
+input[type=submit],  input[type=reset]{
+  background-color: #0b5c63;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #fcba03;
+}
+
+.container {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-75 textarea{
+  height: 100px;
+}
+
+.col-50 {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset]  {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .col-50{
+    width: 50%;
+    margin-left: 22%;
+  }
+}
